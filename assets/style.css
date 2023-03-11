@@ -11,3 +11,9 @@ body {
 h1 {
     color: white;
 }
+
+.square {
+    width: 60px;
+    background-color: white;
+    aspect-ratio: 1;
+}

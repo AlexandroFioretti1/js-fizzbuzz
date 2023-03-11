@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(1, 65, 1);
+    background-color: #083b4c;
 }
 
 h1 {
@@ -16,4 +16,24 @@ h1 {
     width: 60px;
     background-color: white;
     aspect-ratio: 1;
+}
+
+.bg_main {
+    background-color: #083b4c;
+}
+
+.bg_number {
+    background-color: #1389b2;
+}
+
+.bg_fizz {
+    background-color: #1389b2;
+}
+
+.bg_buzz {
+    background-color: #ffd166;
+}
+
+.bg_fizzbuzz {
+    background-color: #f0466f;
 }

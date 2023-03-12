@@ -14,7 +14,7 @@ per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 //******************************************************************************************************************************************/
 const divElement = document.querySelector(".container");
 console.log(divElement);
-let x = 0;
+x = 0;
 
 // Scrivi un programma che stampi in console i numeri da 1 a 100(ciclo for)
 for (let i = 1; i <= 100; i++) {

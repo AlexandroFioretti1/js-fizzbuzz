@@ -14,10 +14,11 @@ per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 //******************************************************************************************************************************************/
 const divElement = document.querySelector(".container");
 console.log(divElement);
+let x = 0;
 
 // Scrivi un programma che stampi in console i numeri da 1 a 100(ciclo for)
 for (let i = 1; i <= 100; i++) {
-  let x = i;
+  x = i;
   const square = document.createElement("div");
   square.classList.add(
     "square",
@@ -26,31 +27,32 @@ for (let i = 1; i <= 100; i++) {
     "justify-content-center",
     "m-3"
   );
+
   if (i % 3 === 0 && i % 5 === 0) {
-    x = "fizzBuzz";
+    x = "fizzbuzz";
     square.classList.add("bg_fizzbuzz");
-    console.log(i, x);
-    square.innerHTML = "fizzbuzz";
+    square.innerHTML = x;
 
     // per i multipli di 3 stampi “Fizz” al posto del numero
   } else if (i % 3 === 0) {
-    x = "Fizz";
+    x = "fizz";
     square.classList.add("bg_fizz");
-    console.log(i, x);
-    square.innerHTML = "fizz";
+    square.innerHTML = x;
 
     // per i multipli di 5 stampi “Buzz”
   } else if (i % 5 === 0) {
-    x = "Buzz";
+    x = "buzz";
     square.classList.add("bg_buzz");
-    console.log(i, x);
-    square.innerHTML = "buzz";
+    square.innerHTML = x;
+   
   } else {
     square.classList.add("bg_number");
-    console.log(i, x);
-    square.innerHTML = i;
+    square.innerHTML = x;
   }
 
+
   divElement.append(square);
+
+  console.log(x);
   // per i numeri multipli di 3 che di 5 stampi “FizzBuzz”.
 }
